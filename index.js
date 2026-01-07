@@ -1,5 +1,15 @@
 import{getStockData} from './fakeStockAPI.js'
 
+
+async function updateStock(){
+  try {
+    const stockData= await getStockData()
+    renderStockTicker(data)
+  }catch{(err => console.error(err)) 
+  }
+} 
+
+
 let previousPrice= null
 
 function renderStockTicker(stockData) {
@@ -35,13 +45,7 @@ previousPrice= stockData.price
 }
 
 
-function updateStock(){
-  getStockData().then(data=>{
-    renderStockTicker(data)
-  }).catch(err => console.error(err))
-}
-
 updateStock()
 // update at interval
 
-setInterval(updateStock,2000)
+setInterval(updateStock,1500)
