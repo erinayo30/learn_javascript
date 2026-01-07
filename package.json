@@ -1,0 +1,14 @@
+{
+  "name": "Scrim-s06igmu",
+  "description": "https://scrimba.com/the-backend-developer-path-c0tbi0l98f/~0zl3",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
