@@ -15,7 +15,7 @@ let currentStockIndex = 0
 let previousPrice= null
 
 function generatePriceChange(basePrice){
-    const changePercent = (Math.random() *4-2/100)
+    const changePercent = (Math.random() * 4-2 )/100
     return basePrice*(1 + changePercent)
 }
 
@@ -36,7 +36,7 @@ export function getStockData(){
                 }
                 // update for next call
                 previousPrice = newPrice
-                currentStockIndex = (currentStockIndex +1)%stock.length
+                currentStockIndex = (currentStockIndex +1) % stocks.length
 
                 resolve(stockData)
         }, delay)
